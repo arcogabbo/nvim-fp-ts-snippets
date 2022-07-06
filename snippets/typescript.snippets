@@ -1,0 +1,82 @@
+# Snippets created by Gabriele Mendolia (https://github.com/arcogabbo)
+snippet fpch "fp-ts taskEither chain"
+	${1:O}.chain(${2:variable}=>),
+	${0}
+
+snippet fpbm "bimap"
+	${1:O}.bimap(${2:leftSideFn},${3:rightSideFn})
+	${0}
+
+snippet fpm "map"
+	${1:O}.map(${2:rightSideFn})
+	${0}
+
+snippet fpml "mapLeft"
+	${1:O}.mapLeft(${2:leftSideFn})
+	${0}
+
+snippet fpof "of function"
+	${1:O}.of(${2:target})
+	${0}
+
+snippet fpos "Option some"
+	O.some(${1:variable})
+	${0}
+
+snippet fpr "E,TE right"
+	${1:E}.right(${2:target})
+	${0}
+
+snippet fpl "E,TE left"
+	${1:E}.left(${2:target})
+	${0}
+
+# The snippets below are the porting of jaun ojeda ones
+# credit: https://github.com/juanojeda/fp-ts-snippets
+snippet fpt "Import Task"
+	import * as ${1:T} from "fp-ts/lib/Task";
+	${0}
+
+snippet fpte "Import TaskEither"
+	import * as ${1:TE} from "fp-ts/lib/TaskEither";
+	${0}
+
+snippet fpe "Import Either"
+	import * as ${1:E} from "fp-ts/lib/Either";
+	${0}
+
+snippet fpo "Import Option"
+	import * as ${1:O} from "fp-ts/lib/Option";
+	${0}
+
+snippet fpa "Import Array"
+	import * as ${1:A} from "fp-ts/lib/Array";
+	${0}
+
+snippet fpfn "Import Function"
+	import ${1} from "fp-ts/function";
+	${0}
+
+snippet fpp "Import Pipe"
+	import {pipe} from "fp-ts/function";
+	${0}
+
+snippet fpf "Import Flow"
+	import {flow} from "fp-ts/function";
+	${0}
+
+snippet fpio "Import IO"
+	import * as ${1:IO} from "fp-ts/lib/IO";
+	${0}
+
+snippet fpioe "Import IOEither"
+	import * as ${1:IOE} from "fp-ts/lib/IOEither";
+	${0}
+
+snippet fpfold "fold"
+	${1:O}.fold(${2:leftSideFn},${3:rightSideFn})
+	${0}
+
+snippet fptryc "tryCatch"
+	${1:O}.tryCatch(${2:tryFn},${3:catchFn})
+	${0}
