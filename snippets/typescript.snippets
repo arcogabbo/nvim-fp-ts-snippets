@@ -1,23 +1,18 @@
 # Snippets created by Gabriele Mendolia (https://github.com/arcogabbo)
-snippet fpch "fp-ts taskEither chain"
-	${1:O}.chain(${2:variable}=>),
-	${0}
+snippet fpch "fp-ts chain"
+	${1:O}.chain(${2:variable}=>${3:rigthSideFn})
 
 snippet fpbm "bimap"
 	${1:O}.bimap(${2:leftSideFn},${3:rightSideFn})
-	${0}
 
 snippet fpm "map"
 	${1:O}.map(${2:rightSideFn})
-	${0}
 
 snippet fpml "mapLeft"
 	${1:O}.mapLeft(${2:leftSideFn})
-	${0}
 
 snippet fpof "of function"
 	${1:O}.of(${2:target})
-	${0}
 
 snippet fpos "Option some"
 	O.some(${1:variable})
@@ -75,8 +70,6 @@ snippet fpioe "Import IOEither"
 
 snippet fpfold "fold"
 	${1:O}.fold(${2:leftSideFn},${3:rightSideFn})
-	${0}
 
 snippet fptryc "tryCatch"
 	${1:O}.tryCatch(${2:tryFn},${3:catchFn})
-	${0}
