@@ -1,6 +1,15 @@
 # Snippets created by Gabriele Mendolia (https://github.com/arcogabbo)
+snippet iots "import io-ts"
+	import * as ${1:t} from "io-ts";
+	
 snippet fppr "Path resolver"
 	import * as ${1:PR} from "io-ts/PathReporter";
+
+snippet fplog "Dummy logging function for pipelines"
+	(x)=>{console.log(x); return x},
+	
+snippet fproa "import readonlyarray"
+	import * as ${1:ROA} from "fp-ts/lib/ReadonlyArray";
 
 snippet fpch "fp-ts chain"
 	${1:O}.chain(${2:variable}=>${3:rigthSideFn}),
